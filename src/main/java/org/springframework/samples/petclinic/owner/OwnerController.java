@@ -15,6 +15,7 @@
  */
 package org.springframework.samples.petclinic.owner;
 
+import org.apache.catalina.core.ApplicationContext;
 import org.springframework.samples.petclinic.visit.VisitRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -40,7 +41,6 @@ import java.util.Map;
 class OwnerController {
 
 	private static final String VIEWS_OWNER_CREATE_OR_UPDATE_FORM = "owners/createOrUpdateOwnerForm";
-
 	private final OwnerRepository owners;
 
 	private VisitRepository visits;
